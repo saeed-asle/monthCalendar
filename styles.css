@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(133, 132, 135);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calendar {
+    background-color: rgb(46, 46, 57);
+    color: rgb(249, 244, 244);
+    width: 450px;
+    height: 520px;
+    border-radius: 10px;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, .4);
+}
+
+.month {
+    width: 100%;
+    height: 120px;
+    background-color: rgb(46, 46, 57);
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-between; 
+    align-items: center;
+    text-align: center;
+    border-radius: 10px 10px 0 0;
+}
+
+.upper-floor {
+    text-align: left;
+    width: 100%;
+    padding: 10px;
+    padding-left: 25px; 
+
+}
+.upper-floor h1 {
+    color: rgb(200, 199, 199);
+    font-size: 28px; 
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 0; 
+}
+.lower-floor {
+    width: 100%;
+    padding: 5px 18px; 
+    display: flex;
+    justify-content: space-between;
+}
+
+
+#prevMonthBtn,
+#nextMonthBtn ,
+#todayBtn {
+    background-color: rgb(46, 46, 57);
+    color: rgb(221, 220, 220);
+    border: none;
+    padding: 15px;
+    border-radius: 100px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 25px;
+}
+
+
+.weekdays {
+    width: 100%;
+    height: 50px;
+    display: flex;
+}
+
+.weekdays div {
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.days {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2px;
+}
+
+.days div {
+    font-size: 14px;
+    margin: 3px;
+    width: 57.5px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.days div.other-month {
+    color: gray; 
+}
+
+.days div:hover:not(.empty) {
+    border: 2px solid gray;
+    cursor: pointer;
+}
+
+.today {
+    background-color: lightseagreen;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-color: lightgray;
+}
+
+.event-window {
+    width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: rgb(230, 228, 228);
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(9, 9, 12, 0.9);
+}
+
+.event-window h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.event-window label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.event-window input[type="text"],
+.event-window textarea {
+    width: calc(100% - 10px);
+    padding: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.event-window button {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 3px;
+    background-color: lightseagreen;
+    color: white;
+    cursor: pointer;
+}
+
+.event-window button:hover {
+    background-color: rgb(8, 10, 8);
+}
+
